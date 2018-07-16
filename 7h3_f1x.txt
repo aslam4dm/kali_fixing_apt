@@ -1,0 +1,10 @@
+you will require root access to write to sources.list file in /etc/apt/ directory.
+
+Type: sudo -i
+Type: your password.
+Type: touch /etc/apt/sources.list
+Type: chmod 644 /etc/apt/sources.list
+Type: echo "deb http://http.kali.org/kali kali-rolling main contrib non-free" > /etc/apt/sources.list
+Type: apt-key adv --keyserver hkp://keys.gnupg.net --recv-keys 7D8D0BF6
+Type: apt-get update
+Now install whatever it is that you want to install.
